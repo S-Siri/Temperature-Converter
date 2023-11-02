@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="head.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="main_box">
+            <div class="heading_box">
+                <h2>🌡Temperature Converter🌡</h2>
+            </div>
+            <div class="temp_box">
+                <div class="faren_box" >
+                    <h4 class="head_shadow">Farenheit</h4>
+                    <input class="faren" id="faren" placeholder="°F" oninput="enterf()"></input>
+                </div>
+                <div class="cel_box">
+                    <h4 class="head_shadow">Celcius</h4>
+                    <input class="cel" id="cel" placeholder="°C" oninput="enterc()"></input>
+                </div>
+                <div class="kel_box">
+                    <h4 class="head_shadow">Kelvin</h4>
+                    <input class="kel" id="kel" placeholder="°K" oninput="enterk()"></input>
+                </div>
+                <p id="entersomething"></p>
+            </div>
+            <button class="ok" onclick="ans()">CONVERT</button>
+            <button class="ok" onclick="document.location.reload()">CLEAR</button>
+        </div>
+        <div class="pic1">
+            <img src="temp1.png" alt="thermom">
+        </div>
+        <div class="pic2">
+            <img src="temp2.png" alt="calcu">
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="task2.js"></script>
+</body>
+</html>
